@@ -1,5 +1,6 @@
 package application;
 
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
@@ -20,8 +21,7 @@ public class MainController {
 	static Label staticLabel;
 
 
-	public static void main(String[] args) throws Exception{
-
+	public static String reader(String URL) throws IOException {
 		// Opens and reads the url
 		final String url =("https://www.gutenberg.org/files/1065/1065-h/1065-h.htm");
 
@@ -60,8 +60,14 @@ public class MainController {
 		for(int i = 0; i < 20 && i < foo.size(); i++){
 			System.out.println(foo.get(i));
 		}
+		return url;
 	}
-	public void applicationButtonClicked(String string) {
+	public static void main(String[] args) throws Exception{
+
+		
+	}
+
+	public void applicationButtonClicked() {
 		String foo = "Top 20 words in The Raven\r\n"
 				+ "\r\n"
 				+ "the=57,\r\n"
