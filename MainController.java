@@ -61,7 +61,7 @@ public class MainController {
 			System.out.println(foo.get(i));
 		}
 	}
-	public void applicationButtonClicked() {
+	public void applicationButtonClicked(String string) {
 		String foo = "Top 20 words in The Raven\r\n"
 				+ "\r\n"
 				+ "the=57,\r\n"
